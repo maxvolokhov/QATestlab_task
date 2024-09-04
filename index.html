@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maksym Volokhov - QA Manual</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #444;
+            border-bottom: 2px solid #444;
+            padding-bottom: 5px;
+        }
+
+        .profile-picture {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .profile-picture img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .contact-info div {
+            margin-right: 10px;
+        }
+
+        .skills,
+        .experience,
+        .education {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            background: #eee;
+            margin-bottom: 5px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .toggle-experience {
+            background-color: #444;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .experience-details {
+            display: none;
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <h1>Maksym Volokhov</h1>
+    <p>QA Engineer - Manual</p>
+
+    <div class="profile-picture">
+    <img src="photo_2024-09-03_17-12-56.jpg" alt="Maksym Volokhov">
+    </div>
+
+
+
+    <div class="contact-info">
+        <div>
+            <strong>Email:</strong> max.volokhov15@gmail.com
+        </div>
+        <div>
+            <strong>Location:</strong> Odessa, Ukraine
+        </div>
+    </div>
+
+    <div class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Manual Testing</li>
+            <li>Test Case Design and Execution</li>
+            <li>Bug Tracking (JIRA, Bugzilla)</li>
+            <li>API Testing (Postman)</li>
+            <li>Agile Methodologies</li>
+            <li>Basic Automation Testing (Selenium, Python)</li>
+            <li>SQL, HTML, CSS</li>
+        </ul>
+    </div>
+
+    <div class="experience">
+        <h2>Experience</h2>
+        <p>Click the button to toggle experience details</p>
+        <button class="toggle-experience">Show Experience</button>
+        <div class="experience-details">
+            <ul>
+                <li>
+                    <strong>QA Engineer - QATestlab</strong> (03/10/2022 - Present)
+                    <p>Responsible for designing and executing manual test cases, logging bugs, and ensuring software
+                        quality.</p>
+                </li>
+                <li>
+                    <strong>Junior QA Engineer - NDA Company</strong> (2021 - 2022)
+                    <p>Performed manual testing, documented issues, and collaborated with developers to ensure quality
+                        releases.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="education">
+        <h2>Education</h2>
+        <ul>
+            <li>
+                <strong>Bachelor of Economic-Law</strong> - Odessa National University Mechnikova (2012 - 2016)
+            </li>
+            <li>
+                <strong>QA Course</strong> - Hillel IT School (2021)
+            </li>
+            <li>
+                <strong>QA Automation Python Course</strong> - Hillel IT School (2023)
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script>
+        document.querySelector('.toggle-experience').addEventListener('click', function () {
+            const details = document.querySelector('.experience-details');
+            if (details.style.display === 'none' || details.style.display === '') {
+                details.style.display = 'block';
+                this.textContent = 'Hide Experience';
+            } else {
+                details.style.display = 'none';
+                this.textContent = 'Show Experience';
+            }
+        });
+
+</script>
+</body>
+
+</html>
